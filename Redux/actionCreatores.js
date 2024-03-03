@@ -1,5 +1,11 @@
-import { addTodo, removeTodo, doTodo } from "./actions.js";
+import { getAllTodo, addTodo, removeTodo, doTodo } from "./actions.js";
 
+const getAllTodoAction = () => {
+  return {
+    type: getAllTodo
+  
+  };
+};
 const addTodoAction = (title) => {
   return {
     type: addTodo,
@@ -18,4 +24,4 @@ const doTodoAction = (id) => {
     id
   };
 };
-export { addTodoAction, removeTodoAction, doTodoAction };
+export { addTodoAction, removeTodoAction, doTodoAction, getAllTodoAction };
